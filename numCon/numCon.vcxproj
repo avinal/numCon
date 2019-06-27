@@ -132,11 +132,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CalcDisplay.cpp" />
+    <ClCompile Include="converter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CalcDisplay.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="converter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CalcDisplay.resx">
+      <DependentUpon>CalcDisplay.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
